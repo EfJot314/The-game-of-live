@@ -1,16 +1,6 @@
 import pygame, sys, os
 from pygame.locals import *
 
-def resource_path(relative_path):
-    try:
-    # PyInstaller creates a temp folder and stores path in _MEIPASS
-        base_path = sys._MEIPASS
-    except Exception:
-        base_path = os.path.abspath(".")
-
-    return os.path.join(base_path, relative_path)
-
-
 
 pygame.init()
 plansza = pygame.display.set_mode((800, 800))
